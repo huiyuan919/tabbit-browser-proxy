@@ -10,13 +10,13 @@
 // ============================================================
 const ENV = {
   // Tabbit 账号凭据（token 为必填，其余可选）
-  TABBIT_TOKEN: Deno.env.get("TABBIT_TOKEN") ?? "",
+  TABBIT_TOKEN: Deno.env.get("TABBIT_TOKEN") ?? "eyJhbGciOiJSUzI1NiIsImtpZCI6ImNlcnRfNXh5Z21kIiwidHlwIjoiSldUIn0.eyJuYW1lIjoidXNlcl9kZGYxYjU1Y2ZjMzAiLCJpZCI6ImJmOWNhZmQ5LTk1OWItNDFlNC1iMDc2LTc3MDU4ZjUzN2NhNCIsInRva2VuVHlwZSI6ImFjY2Vzcy10b2tlbiIsInRhZyI6IiIsInNjb3BlIjoidGFiIiwiYXpwIjoiZTdmYTQ0Mzg3YjEyMzhlZjFmNmYiLCJpc3MiOiJodHRwczovL3dlYi50YWItYnJvd3Nlci5jb20iLCJzdWIiOiJiZjljYWZkOS05NTliLTQxZTQtYjA3Ni03NzA1OGY1MzdjYTQiLCJhdWQiOlsiZTdmYTQ0Mzg3YjEyMzhlZjFmNmYiXSwiZXhwIjoxNzgwMzczODI2LCJuYmYiOjE3Nzk3NjkwMjYsImlhdCI6MTc3OTc2OTAyNiwianRpIjoiYWRtaW4vZGNhYzY3MmYtMmQ0ZS00MGVlLWFmOWYtMGQwN2U2NWYwMzg5In0.bTqoQgKPLpFarD1nmvji_Olc_Iiqp7ZyQplolAT5ZS8YNJluu9ENIFysSCUeD-Rcqtu1MwPH5Z2D5ven82ap6s-VO3hRW2Q0CNk3ubJvWjm9oyRh3qYNLIdWbUS-8cP14In5QvmbcFpeD2fLQyUmTkxF39cZz1LRjIAnH1aoOptN3B5vWfo71tVL58am2hnFjAsIOHtJKQAB233w9THYS2w3-4uf0DwIE2VtSbwLOUlZO0UQq5CU0PUcRMBlfcYNKPhkFtFcFcGxbrprnVvKmSwzbH_EsUWrU9qZv5KQLuRpq_Ap33-St7Vsd5OGG_wT1Hmh8LPDSDxo-EZ5kkxNx0xXRrIRYwR-W1Nbg4sSWPBp4432b3R-tFtMEnW9hWnRKJPWXZcu1dZDdoMUXyDVIWwM2GfD_c159FtiJLlVfLSs0remsoYSLeEJIxqSCXKSH7opGx2_QOOlK6p05tCpzr-PWY-Pt4AgdxNyyrpg9VjVbGxcd49hBWv1fAIvzzZyCLR-TmfntOFULCRQ_t4sVUgtfdQ286cXUNb5r1k2eNSB8syDdffuWj6X6eH2LQqpiG0LjNWFOyzB3bhSbrXVawBrkymmk0gglck932p3qCS05xk88F1nN6g8tPEa1rss7kYmqh4uDawhEnlOQ8R_LKiHKVuioGw5xL4-R7f-Phs",
   TABBIT_SESSION: Deno.env.get("TABBIT_SESSION") ?? "",
   TABBIT_DEVICE_ID: Deno.env.get("TABBIT_DEVICE_ID") ?? "",
   // 本地服务访问鉴权（可选）
   // 设置后：请求 Bearer 必须匹配此值，Tabbit 凭据使用环境变量
   // 不设置：请求 Bearer 直接作为 Tabbit token 字符串（兼容旧用法）
-  API_KEY: Deno.env.get("API_KEY") ?? "",
+  API_KEY: Deno.env.get("API_KEY") ?? "sk-54188",
   // 监听端口
   PORT: parseInt(Deno.env.get("PORT") ?? "8800"),
 };
